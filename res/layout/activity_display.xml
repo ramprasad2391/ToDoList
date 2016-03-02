@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textViewDisplayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/display_task_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDisplayTitle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/display_task_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewNameTitle"
+        android:layout_alignBottom="@+id/textViewNameTitle"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textViewNameTitle"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNameTitle"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/TextViewName"
+        android:text="@string/display_task_date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewDateTitle"
+        android:layout_below="@+id/TextViewDateTitle"
+        android:layout_marginTop="32dp"
+        android:text="@string/display_task_time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewPriorityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewTimeTitle"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/TextViewName"
+        android:text="@string/display_task_priority"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewDateTitle"
+        android:layout_alignBottom="@+id/TextViewDateTitle"
+        android:layout_alignLeft="@+id/TextViewName"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewTimeTitle"
+        android:layout_alignBottom="@+id/TextViewTimeTitle"
+        android:layout_alignLeft="@+id/TextViewDate"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewPriorityTitle"
+        android:layout_alignBottom="@+id/TextViewPriorityTitle"
+        android:layout_alignLeft="@+id/TextViewTime"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewPriority"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/TextViewTimeTitle"
+        android:src="@drawable/ic_action_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDiscard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewDisplayTitle"
+        android:layout_alignTop="@+id/imageButtonEdit"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/ic_action_discard" />
+
+</RelativeLayout>
